@@ -37,4 +37,4 @@ docker run -it \
 
 Update environment variables in docker-compose.yml
 
-```$ docker compose up -d```
+```$ docker compose up -d``` 
