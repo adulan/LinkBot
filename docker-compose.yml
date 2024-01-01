@@ -1,0 +1,8 @@
+# Example docker-compose.yml
+version: "3"
+services:
+  linkbot:
+    image: ghcr.io/adulan/linkbot:latest
+    restart: unless-stopped
+    environment:
+      - DISCORD_TOKEN=YOUR_TOKEN_HERE
