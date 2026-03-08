@@ -32,3 +32,11 @@ async def replace_twitter_link(message):
     author = message.author.display_name
     new_msg = f"{author} posted a link to Twitter: {new_msg}"
     await replace_message(message, new_msg)
+
+async def replace_reddit_link(message):
+    content = message.content
+    new_msg = content.replace("://www.reddit.com", "://www.rxddit.com")
+    new_msg = new_msg.replace("://reddit.com", "://www.rxddit.com")
+    author = message.author.display_name
+    new_msg = f"{author} posted a link to Reddit: {new_msg}"
+    await replace_message(message, new_msg)

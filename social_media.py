@@ -1,5 +1,5 @@
 import discord, datetime, os
-from functions import replace_instagam_link, replace_tiktok_link, replace_twitter_link
+from functions import replace_instagam_link, replace_reddit_link, replace_tiktok_link, replace_twitter_link
 
 
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
@@ -35,6 +35,8 @@ async def on_message(message):
     elif content.find("://www.twitter.com") >= 0 or content.find("://twitter.com") >= 0 \
         or content.find("://www.x.com") >= 0 or content.find("://x.com") >= 0:
         await replace_twitter_link(message)
+    elif content.find("://www.reddit.com") >= 0 or content.find("://reddit.com") >= 0:
+        await replace_reddit_link(message)
 
 
 # Run the client with the Discord API token
