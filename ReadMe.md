@@ -4,7 +4,7 @@ Link Bot is made for Discord and takes social media links and reposts them with 
 
 ## Discord Permissions
 
-To function fully, Blue Bot requires the ```SERVER MEMBERS INTENT``` and ```MESSAGE CONTENT INTENT``` Priviliged Gateway Intents
+To function fully, Link Bot requires the ```SERVER MEMBERS INTENT``` and ```MESSAGE CONTENT INTENT``` Priviliged Gateway Intents
 
 It also requires the following Bot Permissions
 
@@ -23,7 +23,7 @@ docker build --pull --rm -f "Dockerfile" -t linkbot:latest "."
 
 docker run -it \
 --env DISCORD_TOKEN="YOUR_TOKEN" \
---rm --name always_blue.py linkbot:latest
+--rm --name social_media.py linkbot:latest
 
 ### Environment Variables
 | Name | Required | Description |
