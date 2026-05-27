@@ -9,7 +9,7 @@ async def replace_message(message, new_msg):
 
 async def replace_instagam_link(message):
     content = message.content
-    new_msg = content.replace("://www.instagram.com", "://www.eeinstagram.com")
+    new_msg = content.replace("://www.instagram.com", "://d.toinstagram.com")
     new_msg = new_msg.replace("://instagram.com", "://www.eeinstagram.com")
     author = message.author.display_name
     new_msg = f"{author} posted a link to Instagram: {new_msg}"
